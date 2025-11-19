@@ -730,7 +730,7 @@ section {
     opacity: 0.6;
 }
 
-/* Footer Social - делаем еще меньше */
+/* Footer Social - маленькие и статичные */
 .footer-social {
     display: flex;
     gap: 0.8rem;
@@ -746,13 +746,13 @@ section {
     justify-content: center;
     color: var(--white);
     text-decoration: none;
-    transition: all 0.3s ease;
-    opacity: 0.01; /* Оставляем как было */
+    opacity: 0.01;
 }
 
+/* Убраны все hover эффекты */
 .footer-social-link:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
+    opacity: 0.01;
+    transform: none;
 }
 
 .footer-social-link.vk {
@@ -872,12 +872,22 @@ section {
     }
 
     .footer-social-link {
-        width: 35px;
-        height: 35px;
+        width: 14px;
+        height: 14px;
     }
 
     .footer-social-link svg {
-        width: 18px;
-        height: 18px;
+        width: 7px;
+        height: 7px;
+    }
+
+    .footer-vk-text {
+        font-size: 0.3rem;
+    }
+
+    /* Убираем hover эффекты и на мобильных */
+    .footer-social-link:hover {
+        opacity: 0.01;
+        transform: none;
     }
 }
